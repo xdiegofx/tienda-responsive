@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './components/header';
+import Header from './components/Header';
 import Banner from './components/Banner';
-import ProductosDestacados from './components/ProductosDestacados';
+import Productos from './components/Productos';
 import Footer from './components/Footer';
 
 const productos = [
@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Header />
       <Banner />
-      <ProductosDestacados productos={productos} />
+      <Productos productos={productos} />
       <Footer />
     </div>
   );
