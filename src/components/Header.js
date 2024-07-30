@@ -2,14 +2,16 @@ import React from "react";
 import "../styles/Header.css";
 import lupa from "../assets/lupa.png";
 import carrito from "../assets/carrito_compras.png";
+import casa from "../assets/icono_casa.png";
 
 const Header = () => {
   return (
     <header>
       <div className="header-container">
         <nav>
+            
           <li>
-            <a href="#home">Home</a>
+            <a href="#home"><img className="HeaderContainer-iconoCasa" src={casa} alt="Icono casa"></img></a>
           </li>
           <li>
             <a href="#products">About</a>
