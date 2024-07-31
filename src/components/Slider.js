@@ -30,9 +30,6 @@ const Slider = () =>{
         }
     }
 
-    const goToSlide = (slideIndex)=>{
-        setCurrentIndex(slideIndex);
-    }
     return(
         <div className="main-slider">
             <div className="slider-container">
@@ -43,21 +40,11 @@ const Slider = () =>{
                         {
                             merch.map((item) => {
                                 return<li key ={item.id}>
-                                     <img src={item.imgUrl} width={500} height={280} alt="carrusel imagenes"/>
+                                     <img src={item.imgUrl} width={700} height={350} alt="carrusel imagenes"/>
                                 </li>  
                             })
                         }
                     </ul>
-                </div>
-                <div className="elements">
-                    {
-                       merch.map((_,idx) => (
-                        <div key={idx} className={"into-elements"}
-                        onClick={()=> goToSlide(idx)}>
-                        &#10026;
-                        </div>
-                       )) 
-                    }
                 </div>
             </div>
         </div>
