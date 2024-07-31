@@ -43,7 +43,7 @@ const Slider = () =>{
                         {
                             merch.map((item) => {
                                 return<li key ={item.id}>
-                                     <img src={item.imgUrl} width={700} height={350} alt="carrusel imagenes"/>
+                                     <img src={item.imgUrl} width={800} height={400} alt="carrusel imagenes"/>
                                 </li>  
                             })
                         }

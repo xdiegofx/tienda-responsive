@@ -4,6 +4,7 @@ import Banner from './components/Banner';
 import Productos from './components/Productos';
 import Slider from './components/Slider';
 import Footer from './components/Footer';
+import Marcas from './components/Marcas';
 
 const productos = [
   { id: 1, nombre: 'Producto 1', precio: '$10', imagen: 'ruta/a/imagen1.jpg' },
@@ -16,6 +17,7 @@ function App() {
     <div className="App">
       <Header />
       <Banner />
+      <Marcas/>
       <Productos productos={productos} />
       <Slider />
       <Footer />

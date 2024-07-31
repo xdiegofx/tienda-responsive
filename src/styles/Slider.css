@@ -1,6 +1,6 @@
 .main-slider{
-    width: 700px;
-    height: 350px;
+    width: 800px;
+    height: 400px;
     margin: 0 auto;
 }
 
@@ -22,7 +22,7 @@
     left: 32px;
     font-size: 50px;
     font-weight: 700;
-    color: #DC7D28;
+    color: #28B6DC;
     z-index: 1;
     cursor: pointer;
 }
@@ -33,7 +33,7 @@
     right: 32px;
     font-size: 50px;
     font-weight: 700;
-    color: #DC7D28;
+    color: #28B6DC;
     z-index: 1;
     cursor: pointer;
 }
