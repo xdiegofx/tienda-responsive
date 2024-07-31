@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import Banner from './components/Banner';
 import Productos from './components/Productos';
+import Slider from './components/Slider';
 import Footer from './components/Footer';
 
 const productos = [
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <Banner />
       <Productos productos={productos} />
+      <Slider />
       <Footer />
     </div>
   );
