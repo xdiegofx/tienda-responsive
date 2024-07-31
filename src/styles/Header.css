@@ -63,3 +63,12 @@ justify-content: space-evenly;
   width: 30px;
 }
 
+/*para diseñar en responsive 
+max se aplica de arriba para dispositivos de pantalla grande a pantalla pequeña
+min se aplica de abajo para dispositivos de pantalla pequeña a pantalla grande*/
+  @media screen and (max-width: 780px) {
+    .header-container nav {    
+      color: aqua;
+      background-color: aqua;
+      
+    }}
