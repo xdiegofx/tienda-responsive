@@ -30,6 +30,9 @@ const Slider = () =>{
         }
     }
 
+    const goToSlide = (slideIndex)=>{
+        setCurrentIndex(slideIndex);
+    }
     return(
         <div className="main-slider">
             <div className="slider-container">
@@ -45,6 +48,16 @@ const Slider = () =>{
                             })
                         }
                     </ul>
+                </div>
+                <div className="elements">
+                    {
+                       merch.map((_,idx) => (
+                        <div key={idx} className={`into-elements`}
+                        onClick={()=> goToSlide(idx)}>
+                        &#10026;
+                        </div>
+                       )) 
+                    }
                 </div>
             </div>
         </div>
