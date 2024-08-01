@@ -8,12 +8,12 @@ import x from "../assets/x.png";
 const Footer = () => {
   return (
     <footer className='footer-final'>
-      <p><strong>Contacto </strong>: info@mitienda.com</p>
+      <p><strong>Contacto </strong>: info@tecnoverse.com</p>
       <img className="iconos" src={whatsapp} alt="Imagen whatsapp"></img>
       <img className="iconos" src={insta} alt="Imagen carrito"></img>
       <img className="iconos" src={facebook} alt="Imagen carrito"></img>
       <img className="iconos" src={x} alt="Imagen carrito"></img>
-      <p><strong>&copy; 2023 MiTienda.</strong> <br/>  Todos los derechos reservados.</p>
+      <p><strong>&copy; 2023 TecnoVerse.</strong> <br/>  Todos los derechos reservados.</p>
     </footer>
   );
 };

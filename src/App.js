@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import Banner from './components/Banner';
 import Slider from './components/Slider';
+import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import Marcas from './components/Marcas';
 /*
@@ -18,6 +19,7 @@ function App() {
       <Banner />
       <Marcas/>
       <Slider />
+      <ContactForm />
       <Footer />
     </div>
   );
