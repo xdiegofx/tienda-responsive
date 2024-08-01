@@ -1,9 +1,14 @@
 import React from 'react';
 import Header from './components/Header';
-import Banner from './components/Banner';
-import Slider from './components/Slider';
 import Footer from './components/Footer';
-import Marcas from './components/Marcas';
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom"; 
+import Producto from './components/Producto';
+import ProductDisplay from './pages/ProductDisplay';
+import Home from './pages/Home';
+import ShopCategory from './pages/ShopCategory';
+import Apple from './pages/Apple';
+import Intel from './pages/Intel';
+import Ryzen from './pages/Ryzen';
 /*
 const productos = [
   { id: 1, nombre: 'Producto 1', precio: '$10', imagen: 'ruta/a/imagen1.jpg' },
@@ -14,11 +19,22 @@ const productos = [
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Banner />
-      <Marcas/>
-      <Slider />
-      <Footer />
+      <BrowserRouter>
+        <Header />
+
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/Producto' element={<ProductDisplay/>}>
+            <Route path=':productId' element={<ProductDisplay/>}/>
+          </Route>
+          <Route path='/Apple' element={<ShopCategory category="apple"/>}/>
+          <Route path='/Intel' element={<ShopCategory category="intel"/>}/>
+          <Route path='/Ryzen' element={<ShopCategory category="ryzen"/>}/>
+
+        </Routes>
+
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
